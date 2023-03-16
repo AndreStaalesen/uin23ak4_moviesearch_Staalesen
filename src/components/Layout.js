@@ -1,15 +1,15 @@
-export default function Layout({children}){
+import { Link, Outlet } from "react-router-dom";
+
+export default function Layout(){
     return(
-        <div className="container">
+        <div id="container">
         <header>
-            <h1>Moviesearch</h1>
-            <nav>
-                <li>Populære nå</li>
-                <li>Nye filmer</li>
-            </nav>
+            <Link to="/">
+                <h1>Movie Search</h1>
+            </Link>
         </header>
         <main>
-            {children}
+            <Outlet/>
         </main>
         <footer>
             <span>Footerinnhold...</span>
