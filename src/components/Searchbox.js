@@ -10,11 +10,12 @@ export default function MovieSearch({ setSearch, getMovies }) {
   return (
       <form onSubmit={handleSubmit}>
         <input
+          className="searchInput"
           type="search"
           placeholder="Search for a movie"
           onChange={handleSearch}
         />
-        <button onClick={getMovies} type="submit">
+        <button className="searchBTN" onClick={getMovies} type="submit">
             Search...
         </button>
       </form>

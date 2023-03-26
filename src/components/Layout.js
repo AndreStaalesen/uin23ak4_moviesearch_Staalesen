@@ -14,7 +14,7 @@ export default function Layout(){
             <Outlet/>
         </main>
         <footer>
-            <span>Footerinnhold...</span>
+            <span>©copyright andre@staalesen</span>
         </footer>
         </div>
     )

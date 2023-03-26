@@ -6,10 +6,8 @@ export default function Main({setSearch, getMovies, movies}){
         <>
         <Searchbox setSearch={setSearch} getMovies={getMovies} />
         <section className="frontpage">
-            <h2>Movies</h2>
-            {movies.map((movie, movieInfo, index) => (
-                <MovieCard key={index} title={movie.Title} img={movie.Poster} year={movie.Year} genre={movieInfo.Genre} /> 
-                       
+            {movies.map((movie, index) => (
+                <MovieCard key={index} title={movie.Title} img={movie.Poster} year={movie.Year} imdbID={movie.imdbID} /> 
                 ))}
         </section>
         </>
