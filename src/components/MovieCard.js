@@ -28,7 +28,9 @@ export default function MovieCard({title, year, img, imdbID}){
                      <p className="p1">{year}</p>
                      <p className="p2">{movieInfo.Genre}</p>
                      <p className="p3">Directed by:  {movieInfo.Director}</p>
-                     <p className="p4">Written by:  {movieInfo.Writer}</p>
+                        {movieInfo.Awards !== '' && movieInfo.Awards !== 'N/A' &&
+                     <p className="p4">{movieInfo.Awards}</p>
+                        }
                 </section>
         </article>
     )}
